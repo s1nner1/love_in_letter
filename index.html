@@ -84,13 +84,11 @@
 </head>
 <body>
 
-  <!-- Кнопки открывания открыток -->
   <div class="button-container">
     <button class="open-button" onclick="openCard('card1')">От Қыдыржана 💌</button>
     <button class="open-button" onclick="openCard('card2')">От Нұрадаулета 💌</button>
   </div>
 
-  <!-- Первая открытка -->
   <div class="card" id="card1">
     <h2>Для Айжана ☀️</h2>
     <div class="heart">💖</div>
@@ -115,7 +113,6 @@
 *P.S.* Тек өзіңе қарайлап жүр. Ты вдохновляешь своей добротой и теплом. Каждый момент с Тобой — как сказка.</p>
   </div>
 
-  <!-- Вторая открытка -->
   <div class="card" id="card2">
     <h2>Для её сестры 🌸</h2>
     <div class="heart">💗</div>
@@ -124,11 +121,9 @@
 
   <script>
     function openCard(id) {
-      // Скрыть все открытки
       document.getElementById('card1').style.display = 'none';
       document.getElementById('card2').style.display = 'none';
 
-      // Показать нужную
       document.getElementById(id).style.display = 'block';
     }
   </script>
