@@ -17,12 +17,6 @@
       overflow: hidden;
     }
 
-    .button-container {
-      display: flex;
-      gap: 30px;
-      margin-bottom: 30px;
-    }
-
     .open-button {
       padding: 20px 30px;
       font-size: 18px;
@@ -33,6 +27,7 @@
       cursor: pointer;
       box-shadow: 0 5px 15px rgba(0,0,0,0.2);
       transition: background-color 0.3s;
+      margin-bottom: 30px;
     }
 
     .open-button:hover {
@@ -70,6 +65,13 @@
       margin: 15px 0;
     }
 
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #444;
+      opacity: 0.8;
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: scale(0.9); }
       to { opacity: 1; transform: scale(1); }
@@ -84,11 +86,10 @@
 </head>
 <body>
 
-  <div class="button-container">
-    <button class="open-button" onclick="openCard('card1')">От Қыдыржана 💌</button>
-    <button class="open-button" onclick="openCard('card2')">От Нұрадаулета 💌</button>
-  </div>
+  <!-- Кнопка открывания открытки -->
+  <button class="open-button" onclick="openCard()">Открой меня 💌</button>
 
+  <!-- Открытка -->
   <div class="card" id="card1">
     <h2>Для Айжана ☀️</h2>
     <div class="heart">💖</div>
@@ -115,22 +116,17 @@
 P.S. Тек өзіңе қарайлап жүр. Ты вдохновляешь своей добротой и теплом. Каждый момент с Тобой - как сказка.</p>
   </div>
 
-  <div class="card" id="card2">
-    <h2>Для её сестры 🌸</h2>
-    <div class="heart">💗</div>
-    <p>Қыдыржаның бажасы болғым келеді</p>
-  </div>
+
+  <div class="footer">Сайт сделан Нұрдаулетом 💻</div>
 
   <script>
-    function openCard(id) {
-      document.getElementById('card1').style.display = 'none';
-      document.getElementById('card2').style.display = 'none';
-
-      document.getElementById(id).style.display = 'block';
+    function openCard() {
+      document.getElementById('card1').style.display = 'block';
     }
   </script>
 
 </body>
 </html>
+
 
 
