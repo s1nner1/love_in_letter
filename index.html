@@ -80,28 +80,9 @@
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
-
-    .music-button {
-      margin-bottom: 20px;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 10px;
-      background: #ff4081;
-      color: white;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .music-button:hover {
-      background: #e91e63;
-    }
   </style>
 </head>
 <body>
-
-  <!-- 🎵 Музыка -->
-
 
   <!-- Кнопки открывания открыток -->
   <div class="button-container">
@@ -149,15 +130,10 @@
 
       // Показать нужную
       document.getElementById(id).style.display = 'block';
-
-      // Включить музыку, если вдруг не включена
-      const music = document.getElementById('bg-music');
-      if (music.paused) {
-        music.play();
-      }
     }
   </script>
 
 </body>
 </html>
+
 
